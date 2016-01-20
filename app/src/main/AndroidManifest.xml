@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joeymccoy.healthcalculator" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OneRepMax"
+            android:label="@string/title_activity_display_message_1mr"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joeymccoy.healthcalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BodyMassIndex"
+            android:label="@string/title_activity_display_message_bmi"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joeymccoy.healthcalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MaxHeartRate"
+            android:label="@string/title_activity_display_message_mhr"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joeymccoy.healthcalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BasalMetabolicRate"
+            android:label="@string/title_activity_display_message_bmr"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joeymccoy.healthcalculator.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Health Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_1rm">Find Your 1-Rep-Max</string>
+    <string name="btn_bmi">Find Your BMI</string>
+    <string name="btn_mhr">Find Your Max Heart Rate</string>
+    <string name="btn_bmr">Find Your BMR</string>
+    <string name="title_activity_one_rep_max">OneRepMax</string>
+    <string name="title_activity_body_mass_index">Body Mass Index</string>
+    <string name="title_activity_max_heart_rate">Maximum Heart Rate</string>
+    <string name="title_activity_display_message_1mr">One Rep Max Calculator</string>
+    <string name="title_activity_display_message_bmi">Body Mass Index Calculator</string>
+    <string name="title_activity_display_message_mhr">Max Heart Rate Calculator</string>
+    <string name="title_activity_display_message_bmr">Basal Metabolic Rate Calculator</string>
+    <string name="enter_weight">Enter Weight (lbs):</string>
+    <string name="enter_reps_1rm">Enter # of Reps:</string>
+    <string name="enter_height_bmi">Enter Height (inches):</string>
+    <string name="enter_age">Enter Your Age:</string>
+    <string name="calculate_1rm_btn">Calculate 1 Rep Max</string>
+    <string name="calculate_bmi_btn">Calculate Your BMI</string>
+    <string name="calculate_mhr_btn">Calculate Your MHR</string>
+    <string name="maleRB">Male</string>
+    <string name="femaleRB">Female</string>
+    <string name="mfText">Male or Female:</string>
+    <string name="calculate_bmr_btn">Calculate Your BMR</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_basal_metabolic_rate">BasalMetabolicRate</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>

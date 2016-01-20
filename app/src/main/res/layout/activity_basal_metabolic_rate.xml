@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.joeymccoy.healthcalculator.BasalMetabolicRate">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mfText"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+        <RadioButton android:id="@+id/maleRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maleRB"
+            />
+        <RadioButton android:id="@+id/femaleRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femaleRB"
+           />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_height_bmi"
+        android:id="@+id/heightTextViewBmr"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true" />
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/heightTextBmr"
+    android:inputType="number"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/heightTextViewBmr"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_weight"
+        android:id="@+id/weightTextViewBmr"
+        android:layout_below="@+id/heightTextBmr"
+        android:layout_alignParentStart="true" />
+   <EditText android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/weightTextBmr"
+    android:inputType="number"
+       android:layout_below="@+id/weightTextViewBmr"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_age"
+        android:id="@+id/ageTextViewBmr"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+    <EditText android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ageTextBmr"
+    android:inputType="number"
+        android:layout_below="@+id/ageTextViewBmr"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <Button android:id="@+id/calculate_bmr_btn"
+    android:text="@string/calculate_bmr_btn"
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:onClick="onClick"
+    android:layout_width="270dp"
+    android:layout_height="60dp"
+    android:background="@drawable/btncalc"
+    android:shadowColor="#000000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="0"
+        android:layout_below="@+id/ageTextBmr"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:fontFamily="sans-serif-black"
+    android:textSize="25sp"
+    android:textAlignment="center"
+    android:id="@+id/bmrResult"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
